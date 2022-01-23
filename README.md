@@ -119,3 +119,85 @@ Ventajas de python
 ### Reto
 
 Encuentra uina Aplicacion del dia a dia que este programada con Python en alguna parte de su estructura.
+
+- Pinterest: En esta aplicacion Python es el motor del backend de la pagina.
+
+## El núcleo de un programa los algoritmos
+
+Los algoritmos son una series de pasos para resolver un problema.
+
+Se caracteriza por:
+
+- Serie de pasos ordenados para resolver un problema
+- Es Finito
+- No es ambiguo
+
+Pueden representarse mediante un diagrama de flujo.
+
+### otras notas
+
+La palabra algoritmo proviene del sobrenombre de un matemático árabe del siglo IX, Al-Khwarizmi, que fue reconocido por enunciar paso a paso las reglas para las operaciones matemáticas básicas con decimales (suma, resta, multiplicación y división).
+.
+
+#### ¿Qué es un Algoritmo?
+
+Un algoritmo informático es una secuencia de instrucciones finitas que llevan a cabo una serie de procesos para dar respuesta a determinados problemas. Es decir, un algoritmo informático resuelve cualquier problema a través de unas instrucciones y reglas concisas, mostrando el resultado obtenido.
+
+## El arte de la programación
+
+Python es un lenguaje que tiene una sintaxis sencilla, es fácil de entender, ademas se aplica para muchos campos de la industria.
+
+**Ventajas de Python:**
+
+- Es fácil de usar. Con algunos tips sencillos, cualquier persona puede programar rutinas sencillas en Python.
+
+- Legibilidad del código. La estructura del código es bastante natural y promueve una forma de escribir que facilita su lectura. Esta es una ventaja importante frente a lenguajes dirigidos al mismo sector, como Perl.
+
+- Facilidad de uso en dispositivos. Algunas plataformas como Raspberry Pi están basadas
+
+- Facilidad de escritura de código asíncrono. Los lenguajes diseñados antes de que las plataformas multiprocesador (o multinúcleo) estuvieran tan generalizadas suelen tener estructuras bastante complicadas para mantener distintos hilos de ejecución; en Python el código asíncrono es bastante sencillo de gestionar.
+
+- Abundancia de bibliotecas. Hay muchas bibliotecas disponibles para extender la funcionalidad básica de Python a cualquier campo.
+
+- Gran base de usuarios. Esto hace que exista mucho código disponible en internet y que los foros de usuarios sean bastante activos, por lo que es fácil encontrar ayuda
+cuando se necesita.
+
+## Instalación de nuestras herramientas en Windows
+
+En Vscode yo uso, las siguientes extensiones relacionadas con python:
+
+- Python: Extension oficial de Visual Studio Code para python
+- Pylance: soporte mejorado de Python para Visual Studio Code
+- Magic Python: Resaltado mejorado del codigo
+- IPython for Vscode: Corrige bugs conocidos de la extension de python
+- Python Docstring Generator: Generador de documentacion de funciones de forma automatica
+- Python Indent: Identa correctamente al dar enter en la continuidad de una instruccion
+- Python path: Permite con mas facilida importar librerias locales de python
+
+- Jupyter: Extension para usar jupyter notebooks en vscode
+- Jupyter Keymap: atajos de teclado para jupyter
+- Jupyter Notebooks renderers: Rendered mejorado de graficos para jupyer notebooks
+
+## Tu mejor herramienta: la consola
+
+Cabe destacar que los comandos son independientes del sistema operativo por el motor de consola que usa el profesor. que esta basado en bash el cual es la consola de Linux.
+La consola nativa de Windows tiene comandos diferentes o no existen. 
+y la consola de Mac suele tener diferencias menores ya que es un sitema operativo basado en Unix igual que Linux.
+
+Lo mas notable es que navegar entre carpetas en la consola es diferente en Windows y Linux por el uso del slash hacia la derecha `/` en linux y hacia la izquierda en windows   `\`.
+
+para ver mas informacion de cualquier comando basta con llamar `--help`
+
+ejemplo:
+
+    ```sh
+    cd --help
+    ```
+
+    ```sh
+    ls --help
+    ```
+
+    ```sh
+    mkdir --help
+    ```
