@@ -181,7 +181,7 @@ En Vscode yo uso, las siguientes extensiones relacionadas con python:
 ## Tu mejor herramienta: la consola
 
 Cabe destacar que los comandos son independientes del sistema operativo por el motor de consola que usa el profesor. que esta basado en bash el cual es la consola de Linux.
-La consola nativa de Windows tiene comandos diferentes o no existen. 
+La consola nativa de Windows tiene comandos diferentes o no existen.
 y la consola de Mac suele tener diferencias menores ya que es un sitema operativo basado en Unix igual que Linux.
 
 Lo mas notable es que navegar entre carpetas en la consola es diferente en Windows y Linux por el uso del slash hacia la derecha `/` en linux y hacia la izquierda en windows   `\`.
@@ -201,3 +201,74 @@ ejemplo:
     ```sh
     mkdir --help
     ```
+
+### Reto crear carpeta con la fecha de hoy
+
+Imprimir la variable date
+
+    ```sh
+    echo $(date)
+    ```
+
+Imprimir la fecha de hoy en consola
+
+    ```sh
+    echo $(date +"%Y_%m_%d")
+    ```
+
+Crear la carpeta con la fecha de hoy
+
+    ```sh
+    mkdir $(date +"%Y_%m_%d")
+    ```
+
+## Explorando Python: operadores aritméticos
+
+## ¿Qué es una variable?
+
+A un nivel más profundo una variable es la forma en la que definimos un espacio en memoria en la ejecución del programa, esta memoria es la RAM, cada vez que se accede a una variable lo que se hace es pedirle a la computadora que acceda a ese espacio en memoria.
+
+Python al ser un lenguaje de programación de alto nivel, débilmente tipados declarar una variable lo que implica reservar una nueva dirección en memoria es tan simple como declarar el nombre de nuestra variable seguido de la igual seguido de su valor inicial.
+
+**Ejemplo**
+
+    ```python
+    mi_suma = 3 + 5
+    ```
+
+Una variable es una pieza contenedora de información, la cual posee un nombre como identificador. Una variable puede contener elementos de distintos tipos.
+
+Existen ciertas normas que se deben cumplir para declarar una variable en **python**:
+
+- El nombre de la variable NO debe iniciar con un numero.
+
+- El nombre debe estar en minúsculas.
+
+- Si el nombre de la variable posee varias palabras se deben separar con “_” ya que no esta permitido el uso de espacio.
+
+- Otra regla de las variables que no menciona el profesor es que en todos los lenguajes de programación existen palabras reservadas, algunos ejemplos en python son el if, for, while, def, que son palabras que se utilizan para definir estructuras dentro del mismo lenguaje de programación.
+Una variable no puede tener el mismo nombre que una palabra reservada, y de hacerse terminaría en un error de ejecución y el programa no funcionaría.
+
+## Los primitivos: tipos de datos sencillos
+
+En python todo es un objeto, y los objetos pueden ser de distintos tipos.
+
+tipos de datos primitivos en python:
+
+- int: Números Entero
+- float: Números Decimales o de punto flotante
+- bool: Booleano (Verdadero o Falso)
+- String: Cadena de texto
+
+## Convertir un dato a un tipo diferente
+
+Convertir un dato a otro tipo de dato es una operación común en los lenguajes de programación, esta operación se conoce como parseo ('parse' en inglés), siendo lo que se realiza es un parseo de la variable.
+En python existen diversos métodos nativos para los tipos de datos primitivos.
+
+- int(x) retorna la variable como un entero
+
+- float(x) retorna la variable como un flotante
+
+- str(x) retorna la variable como un string
+
+- bool(x) retorna la variable como un booleano, cabe destacar que solo retornara falso a los valores falsy , en python son: `0`, `None`, `0.0`, `0j`, `False`
