@@ -1,36 +1,34 @@
 """
 Ejercicio
 """
+
 VALORES_MONEDAS = {
   'BOLIVAR': 4.58,
   'PESO_COLOMBIANO': 3959.60
 }
 
+COIN_NAMES = {
+  'BOLIVAR': 'Bolivares',
+  'PESO_COLOMBIANO': 'Pesos Colombianos'
+}
 
-def convert_colombian_pesos_to_usd(_pesos):
+SUPPORTED_COINS = [
+  'PESO_COLOMBIANO',
+  'BOLIVAR',
+]
+
+
+def convert_coin_to_usd(coin, usd_value):
     """[summary]
 
     Args:
-        _pesos ([float]): [description]
+        coin ([type]): [description]
+        usd_value ([type]): [description]
 
     Returns:
-        [float]: [description]
+        [type]: [description]
     """
-    valor_dolar = 3959.60
-    return round(_pesos / valor_dolar, 2)
-
-
-def convert_bolivar_to_usd(_bolivares):
-    """[summary]
-
-    Args:
-        _pesos ([float]): [description]
-
-    Returns:
-        [float]: [description]
-    """
-    valor_dolar = 4.58
-    return round(_bolivares / valor_dolar, 2)
+    return round(coin / usd_value, 2)
 
 
 if __name__ == '__main__':
@@ -43,11 +41,12 @@ if __name__ == '__main__':
     """
     opcion = input(MENU)
     opcion = int(opcion)
-    if opcion == 1:
-        valor_moneda = input("¿Cuantos pesos colombianos tienes?: ")
-        valor_moneda = float(valor_moneda)
-        print(f'Tienes {convert_colombian_pesos_to_usd(valor_moneda)} dolares')
-    elif opcion == 2:
-        valor_moneda = input("¿Cuantos bolivares tienes?: ")
-        valor_moneda = float(valor_moneda)
-        print(f'Tienes {convert_bolivar_to_usd(valor_moneda)} dolares')
+
+    current_coin = SUPPORTED_COINS[opcion - 1]
+    valor_moneda = input(f"¿Cuantos {COIN_NAMES[current_coin]} tienes?: ")
+    valor_moneda = float(valor_moneda)
+    resultado = convert_coin_to_usd(
+      valor_moneda,
+      VALORES_MONEDAS[current_coin]
+    )
+    print(f'''Tienes {resultado} dolares''')
