@@ -272,3 +272,5 @@ En python existen diversos métodos nativos para los tipos de datos primitivos.
 - str(x) retorna la variable como un string
 
 - bool(x) retorna la variable como un booleano, cabe destacar que solo retornara falso a los valores falsy , en python son: `0`, `None`, `0.0`, `0j`, `False`
+
+## ¿En qué lugares programar para ciencia de datos?
