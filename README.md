@@ -274,3 +274,95 @@ En python existen diversos métodos nativos para los tipos de datos primitivos.
 - bool(x) retorna la variable como un booleano, cabe destacar que solo retornara falso a los valores falsy , en python son: `0`, `None`, `0.0`, `0j`, `False`
 
 ## ¿En qué lugares programar para ciencia de datos?
+
+Para ciencia de datos se suele preferir trabajar en sistemas operativos basados en UNIX o utilizando WSL.
+
+- Para ciencia de datos se suele preferir trabajar en Sistemas Operativos basado en UNIX usando Linux, MacOS o WSL (Windows Subsystem for Linux)
+
+### NoteBooks
+
+Son un entorno eficiente y moderno que combina código, visualizaciones y mapas al vuelo y herramientas de datos. En el editor de notebooks, puede escribir, documentar y ejecutar código de Python en un único lugar.
+
+### Scripts
+
+Un script, secuencia de comandos o guion es un término informal que se usa para designar a un programa relativamente simple. → Es el codigo del programa escrito en texto plano
+
+### NoteBook Vs Script
+
+Ambos son útiles, aunque los Scripts son mas directos,
+Notebooks te permiten ver lo que haces, a medida de que lo haces, en estos puedes encargarte de experimentar y hacer el prototipado de tu script y finalmente pasarlo a un Script cuando ya este listo y estés seguro de que todo funciona como es esperado.
+
+## Google Colab: primeros pasos
+
+- Es una herramienta basada en la nube que te permite trabajar en notebooks, y se guardan en tu cuenta de Google Drive 😃.
+
+### Nube vs local
+
+Ambas son muy útiles, pero se diferencian en:
+
+- Configuración de entornos, ya que en la nube ya están precargadas (Librerias, Herramientas Data Science), y de local tienes que configurarlo manualmente.
+
+- Tiempo de ejecución (Mejor en Nube cuando los datos son muy grandes)
+
+- Escalabilidad: la nube tiene más poder porque puedes rentarlo!. 💸
+
+### Que es Google Colab
+
+- Servicio en la nube basado en Jupyter Notebooks,
+
+- No requiere configuración
+
+- Tiene un trabajo a nivel de archivo (el notebook es la base del proyecto).
+
+- Tiene uso de gratuito de GPUs y TPUs para correr modelos grandes. ☁️ (Poder de computo y ejecucion)
+
+### Caracteristicas Google Colab
+
+- Puedes acceder a Google Colab desde tu drive o desde el navegador.
+- Para aprender Markdown. [Markdown Guide](https://www.markdownguide.org/) 📚
+- Las variables son persistentes (se conservan) entre celdas de código!. 🔥
+- Para llamar a la línea de comandos, debemos usar primero un signo de admiración `!` y luego un comando válido, por ejemplo
+`!pwd` o `!pip install session-info`
+
+### Instalar Librerias Google Colab
+
+- Instalamos la libreria con el comando `!pip install <Library Name>`
+
+- Importamos la libreria al Nottebook con `import <Library Name>`
+
+### CPU , GPU y TPU
+
+[Diferencias entre CPU-GPU-TPU](https://leslysandra.medium.com/cpu-gpu-tpu-e4a686d3dbc9)
+
+- CPU (central processing unit)
+- GPU (graphic processor unit)
+- TPU (tensor processing unit)
+
+## Google Colab: ciencia de datos
+
+Herramientas de Google Collab en Ciencia de datos:
+
+- Subir archivos (Al almacenamiento de sesión o Montar Drive)
+
+- Librerias para CD:
+  a. matplotlib (Generar gráficos)
+  b. numpy (Manipulación de vectores)
+  c. pandas (Análisis de datos)
+  d. scipy (Herramientas)
+  e. seaborn (Visualización)
+
+- Code Snippets (Ejemplos de código que puedes utilizar)
+
+- Keyboard shortcuts (Atajos de teclado)
+
+## Utilizar Deepnote
+
+Que gran herramienta deepnote, especialmente para:
+
+- hacer un portafolio y poder compartir con terceros…
+
+- o trabajar colaborativamente con un equipo de trabajo.
+
+- Puede integrarse con mas aplicaciones.
+
+- Tiene mas tipos de blockes para agregar (Text, Inputs, Other[Chart])
