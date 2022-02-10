@@ -382,8 +382,6 @@ ver notas en deepnote
 
 ## Estadística descriptiva vs. inferencial
 
-[Pagina de analisis estadistico de hechos del mundo de hoy](https://fivethirtyeight.com/)
-
 ### Estadística descriptiva
 
 Foco principal de este curso
@@ -429,3 +427,60 @@ Predecir desempeño de un jugador de futbol en el futuro.
 - Responder preguntas con relevancia social (como esta la desigualdad?, como esta la economia?)
 - Reconocer patrones en los datos
 - Descubrir a quienes usan estas herramientas con fines nefastos. (Descubrir a quienes mienten con estadistica)
+
+**audiolibros sobre los papeles de la estadística**, los sesgos mentales, y hasta como los mejores científicos pueden caer en la desinformación:
+
+- El Cisne Negro, de Nassim Taleb
+
+- Ruido, de Daniel Kahneman
+
+- Pensar Rápido y pensar despacio, de Daniel Kahneman
+
+[Pagina de analisis estadistico de hechos del mundo de hoy](https://fivethirtyeight.com/)
+
+## Flujo de trabajo en data science
+
+![flujo data science](./flujo_de_datascience.png)
+
+En el flujo de un proyecto de machine learning, diversos roles se enfocan en distintas partes del proceso.
+
+- Data Engineer: Se encofoca en la Preparacioncion de los datos
+- Data analysis: Se enfoca en el Entrenamiento del modelo
+- Data Scientist: Se enfoca en el Entrenamiento y la Evaluacion del modelo
+- Research Scientist y ML Engineer: Se enfoca en la Validacion del modelo y Model Serving (Como se le sera servido este modelo al sistema principal)
+- Developer: Se enfoca en la Interfaz del usuario final, conectando asi el modelo listo con el sistema principal que usara el usuario final.
+
+![bloques_de_procesamiento](./bloques_de_procesamiento.png)
+
+En los bloques del procesamiento la estadistica descriptiva juega un rol importante en los primeros dos bloques
+
+1. Ingesta de datos y Validacion de los datos
+2. **Preparacion de los datos y Entrenamiento del modelo** (aqui se usa mas)
+
+## Plan del curso y cómo se involucra la estadística en el flujo de data science
+
+### Primer bloque del proceso
+
+- Tipos de datos
+- Pipeline de procesamiento
+
+Estadísticos para la **Ingesta de datos** y **Procesamiento de datos/ Validación**
+
+### Segundo bloque del proceso
+
+- Analisis exploratorio
+- Estadística descriptiva
+- Correlaciones
+- Reducción de datos
+
+Estadísticos para la **analítica de datos** y **exploración de datos**
+
+### NUESTRAS DOS FILOSOFÍAS MATEMÁTICAS DESCRIPTIVAS
+
+Dos casos de uso:
+
+- Uso de la estadística para hacer la ingesta y procesamiento de los datos
+
+- Uso de la estadística para hacer la analítica y aplicación necesaria para pasar a Machine Learning Engineer o sacar valor de los datos
+
+## Tipos de datos
