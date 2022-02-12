@@ -484,3 +484,15 @@ Dos casos de uso:
 - Uso de la estadística para hacer la analítica y aplicación necesaria para pasar a Machine Learning Engineer o sacar valor de los datos
 
 ## Tipos de datos
+
+Los datos se dividen en dos grupos principales:
+
+**datos categóricos:** (genero, categoría de película, método de pago)
+
+- ordinales (existe una relación de orden en entre las categorías)
+- nominales
+
+**datos numéricos:** (edad, altura, temperatura)
+
+- discretos (datos enteros como la edad)
+- continuos (datos flotantes como la altura o la temperatura)
