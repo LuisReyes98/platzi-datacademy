@@ -496,3 +496,89 @@ Los datos se dividen en dos grupos principales:
 
 - discretos (datos enteros como la edad)
 - continuos (datos flotantes como la altura o la temperatura)
+
+
+## Medidas de tendencia central
+
+### ¿Tendencia central?
+
+- Media (promedio)
+- Mediana (valor que esta en la mitad y separa los datos en dos partes iguales)
+- Moda (valor que se repite mas veces)
+
+Cabe destacar que una distribución de datos se considera Normal cuando la Media, la Moda y la Mediana se encuentran en el mismo punto.
+
+[Notas de las fórmulas de las medidas de tendencia central](https://github.com/LuisReyes98/platzi-estadistica-data-science-ejercicio/blob/master/%5Bclase-07%5Dmedidas-central.ipynb)
+
+### ¿Cuando usar cual?
+
+- La media es susceptible a valores atipicos
+
+- La moda no aplica para datos numericos continuos (ya que es dificil determinar las categorias por lo cual se usa una nocion diferente)
+
+## Metáfora de Bill Gates en un bar
+
+- Media es el promedio
+- Mediana puede ser uno o dos valores dependiendo si la distribucion de datos es par o impar
+- Moda es el valor que se repite mas veces
+
+Teniendo un dataset de los salarios de todos los empleados de varias empresas.
+
+Tenemos sus media, moda y mediana.
+
+todos los salarios de los empleados son de 35000 dólares, siendo la **media**, **moda** y **mediana** de sus salarios también 35000 dólares.
+
+Entonces si en el bar hay 11 personas y llega BillGates al bar con un salario de 1 millón de dólares
+La **media** del salario ahora es de 115416.6 dólares
+La **mediana** es 35000 dólares
+y la **moda** es 35000 dólares
+
+por lo cual vemos que la presencia de un valor atípico ocasiona que la media haga parecer que el salario es de las personas es mucho mayor de lo que realmente es, ya que la media tiene es sesgada en la presencia de valores atípico.
+Siendo la **mediana** un valor mejor para estos casos ya que no es afectada por valores atípico.
+
+## Medidas de tendencia central en Python
+
+“La estadística descriptiva no son solo números, también son visualizaciones”
+
+## Medidas de dispersión
+
+### Dispersion en una distribución
+
+- Rango
+- Rango Inter cuartil
+- Desviación estándar
+
+Dado el grafico
+
+![alt](./cuadrantes.png)
+
+En el **histograma** se ve la distribución de datos visualizando la cantidad de datos referente a cada valor y podemos ver que en este caso es una distribución normal.
+
+### Rango
+
+**El Rango** es la distancia o intervalo entre el valor máximo y el valor mínimo de la distribución, el cual está dado por la resta del valor máximo menos el mínimo siendo este la diferencia.
+
+### Cuartiles
+
+**La Rango Inter cuartil** son los puntos que divide los datos en 4 partes iguales:
+
+Siendo el cuartil 2 es la Mediana
+El cuartil 1 es la mitad entre la mediana y el valor mínimo
+El cuartil 3 es la mitad entre la mediana y el valor máximo
+
+Y la distancia entre el cuartil 3 y el cuartil 1 se conoce como rango Inter cuartil (IQR).
+
+Los cuartiles separan los datos en 4 partes iguales
+
+Los cuartiles son valores que dividen una muestra de datos en cuatro partes iguales
+
+**1er cuartil (Q1):** 25% de los datos es menor que o igual a este valor.
+**2do cuartil (Q2):** La mediana. 50% de los datos es menor que o igual a este valor.
+**3er cuartil (Q3):** 75% de los datos es menor que o igual a este valor.
+**Rango Inter cuartil:** La distancia entre el primer 1er cuartil y el 3er cuartil (Q3-Q1); de esta manera, abarca el 50% central de los datos.
+
+### Diagrama de caja o box plot
+
+representa gráficamente una serie de datos numéricos a través de sus cuartiles. De esta manera, el diagrama de caja muestra a simple vista la mediana y los cuartiles de los datos. También puede representar los valores atípicos de estos.
+
+En la visualización del rango, el rango Inter cuartil y los cuartiles, se muestra en un **diagrama de caja** que es la gráfica por excelencia para mostrar los datos con respecto a **la mediana** en particular.
