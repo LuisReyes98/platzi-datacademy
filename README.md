@@ -582,3 +582,61 @@ Los cuartiles son valores que dividen una muestra de datos en cuatro partes igua
 representa gráficamente una serie de datos numéricos a través de sus cuartiles. De esta manera, el diagrama de caja muestra a simple vista la mediana y los cuartiles de los datos. También puede representar los valores atípicos de estos.
 
 En la visualización del rango, el rango Inter cuartil y los cuartiles, se muestra en un **diagrama de caja** que es la gráfica por excelencia para mostrar los datos con respecto a **la mediana** en particular.
+
+## Desviación estándar
+
+Dado un dataset de precio de autos
+
+La media es el valor promedio
+
+Media
+
+$$
+\mu = \frac {1}{n} \sum \limits_{i=1}^n a_i
+$$
+
+Una medida de dispersión muy util se obtiene de calcular la variación de cada punto y calcular la distancia que tiene ese punto del valor promedio.
+
+La distancia puede ser negativa si el valor es menor que el promedio y positiva si es mayor que el promedio.
+
+Ya que las distancias son positivas o negativas los valores se elevan al cuadrado antes de sumarse para que siempre sea un valor positivo
+
+Formula de la desviación estándar
+
+$$
+\sigma={\sqrt {\frac {\sum_{n-1}^n(x_{i}-{\mu})^{2}}{N}}}
+$$
+
+Considerar también que $\sigma^2$ es la varianza
+
+cuando se trabaja con una muestra de los datos y no con toda la población se realiza una corrección en la formula al dividir entre $n-1$
+
+$$
+\sigma={\sqrt {\frac {\sum_{n-1}^n(x_{i}-{\mu})^{2}}{n-1}}}
+$$
+
+Una distribución normal tiene la forma de una campana de Gauss. Es simétrica, la media, moda y mediana están en la misma posición.
+
+también que un conjunto de datos normal la distancia entre $\mu -3\sigma$ y $\mu + 3\sigma$ contempla la totalidad de los datos o aproximadamente el 99.72% de los datos.
+
+![desviacion estandar](./desviacion_estandar.webp)
+
+**Metodo de detección de Outliers con el Rango Intercuartil**
+Metodo para descartar datos Outliers consiste en considerar el valor mínimo y máximo de la siguiente manera:
+
+$min = Q1 - 1.5*IQR$
+
+$max = Q3 + 1.5*IQR$
+
+Siendo el rango intercuartil (IQR) la distancia entre Q1 y Q3.
+
+además, este método de detección de Outliers con el Rango Intercuartil se aproximó así que tomaremos los datos en base a $3\sigma$
+
+**Distribucion No Simétrica**
+En este caso usar el rango intercuartil igual que antes no es posible, lo que se hace es en lugar de multiplicar por el IQR, se busca una función que dependa del IQR.
+
+$min = Q1 - 1.5*f(IQR)$
+
+$max = Q3 + 1.5*g(IQR)$
+
+además, si la distribución es No simétrica usar la desviación estándar para contemplar la mayoría de los datos ya no es válido, por lo cual el método que debemos aplicar es el uso del rango Intercuartil.
