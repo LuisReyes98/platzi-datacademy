@@ -640,3 +640,14 @@ $min = Q1 - 1.5*f(IQR)$
 $max = Q3 + 1.5*g(IQR)$
 
 además, si la distribución es No simétrica usar la desviación estándar para contemplar la mayoría de los datos ya no es válido, por lo cual el método que debemos aplicar es el uso del rango Intercuartil.
+
+## Exploración visual de los datos
+
+    "Una imagen vale más que mil palabras.
+    Pero una buena imagen vale mucho más."
+
+[Data viz project](https://datavizproject.com/)
+
+Cada imagen tendrá un caso de uso especifico, dependiendo de los datos que se tienen y que se quiere resaltar
+
+Cada visualización de datos tiene un caso de uso para el cual es más efectivo a la hora de mostrar los datos y la información deseada.
