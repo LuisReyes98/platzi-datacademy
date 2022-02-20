@@ -641,6 +641,10 @@ $max = Q3 + 1.5*g(IQR)$
 
 además, si la distribución es No simétrica usar la desviación estándar para contemplar la mayoría de los datos ya no es válido, por lo cual el método que debemos aplicar es el uso del rango Intercuartil.
 
+[Why “1.5” in IQR Method of Outlier Detection?](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097)
+
+[Important Z Scores](http://www.cs.uni.edu/~campbell/stat/normfact.html)
+
 ## Exploración visual de los datos
 
     "Una imagen vale más que mil palabras.
